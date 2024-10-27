@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="vi" translate="no"><head>
+        <meta charset="UTF-8">
+        <meta name="language" content="vietnamese">
+            <title>Báo VietNamNet - Tin tức mới nhất, tin nhanh Việt Nam và thế giới</title>
+            
+        <link rel="stylesheet" href="style.css">
+        <!-- Đường dẫn chỉ tới file style.css -->
+        <header class="header vnn-header">
+        <div class="container">
+            <div class="container__left">
+                <button type="button" title="Menu" class="container__left-item header__hamburger btn-hamburger">
+                    <span class="icon-hamburger"></span>
+                </button>
+        
+                    <h1 class="header__logo container__left-item">
+                        <a href="/" title="vietnamnet">
+                            <img width="140" src="https://static.vnncdn.net/v1/logo/logoVietnamNet.svg" alt="VietNamNet">
+                            <!-- Logo lấy từ link trang web chính cho đỡ tốn bộ nhớ -->
+                        </a>
+                    </h1>
+                    <div class="header__clock">
+                        <span class="header__clock-content" id="clock">
+                        </span>
+                        <a href="/lich-van-nien" class="header__clock-link">
+                            Xem lịch vạn niên
+                        </a>
+                    </div>
+                <script>
+                    // Hàm để cập nhật thời gian
+                    function updateClock() {
+                        const clockElement = document.getElementById('clock');
+                        
+                        // Tạo một đối tượng Date mới
+                        const now = new Date();
+                        
+                        // Định dạng ngày tháng
+                        const options = { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric' };
+                        const formattedDate = now.toLocaleDateString('vi-VN', options);
+            
+                        // Cập nhật nội dung của phần tử
+                        clockElement.textContent = formattedDate;
+                    }
+            
+                    // Cập nhật thời gian ngay khi tải trang
+                    updateClock();
+            
+                    // Cập nhật thời gian mỗi phút
+                    setInterval(updateClock, 60000);
+                </script>
+            
+            </div>
+            <div class="container__right">
+                <ul class="header__outstanding">
+                    <li class="header__outstanding-item">
+                        <a title="Tin tức 24h" href="/tin-tuc-24h">Tin tức 24h</a>
+                    </li>
+                    <li class="header__outstanding-item">
+                        <a href="/podcast" title="podcast">
+                            Podcast
+                        </a>
+                    </li>
+                    <li class="header__outstanding-item">
+                        <a title="Tuần Việt Nam" href="/tuan-viet-nam">Tuần Việt Nam</a>
+                    </li>
+                    <li class="header__outstanding-item">
+                       <a title="Vietnamnet premium" href="/premium">
+                            <img style="width:89px;" src="https://vnn-res.vgcloud.vn/ResV9/images/vpremium-menu-logo.svg" alt="Vietnamnet premium">
+                        </a>
+                    </li>
+                    <!-- vietnamnet global -->
+                    <li class="header__outstanding-item">
+                       <a title="Vietnamnet global" href="/en">
+                            <img style="width:70px;" src="https://static.vnncdn.net/v1/icon/VietnamNet_bridge.svg" alt="Vietnamnet global">
+                        </a>
+                    </li>
+                    <li class="header__outstanding-item" id="vnnid-topbar">
+                        <a href="./dangnhap.html" class="vnnclientid-login-wrapper vnn__login-btn"> 
+        <span class="vnnclientid-login-text" >
+            Đăng nhập</span>
+        <img class="vnnclientid-login-logo" src="https://static.vnncdn.net/v1/icon/login.svg" alt="login vietnamnet">
+        </button></li>
+                </ul>
+                <div class="header__search">
+                    <button type="button" class="btn-search">
+                        <span class="icon-search"></span>
+                    </button>
+                </div>
+                <div class="form-box">
+                    <form method="get" action="/tim-kiem" class="form__wrapper">
+                        <input class="input__search" name="q" type="text" placeholder="Tìm kiếm ...">
+                        <button type="submit" class="btn__search">
+                            <img src="https://static.vnncdn.net/v1/icon/icon-search.svg">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </header>
+<body>
+    <body class="wrapNav nav-warpper togglePinTop ">
+        <!-- BEGIN COMPONENT:: COMPONENT002464 -->
+    
+    <nav class="mainNav swiper">
+        <ul class="mainNav__list swiper-wrapper">
+            <li class="mainNav__list-item swiper-slide no-action">
+                <a class="btn-home" href="/" title="VietNamNet">
+                    <span class="icon-home"></span>
+                </a>
+            </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Chính trị" href="/chinh-tri">
+                                Chính trị
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Sự kiện" href="/chinh-tri/su-kien" >Sự kiện</a>
+                                        </li>
+                                        <li>
+                                            <a title="Xây dựng đảng" href="/chinh-tri/xay-dung-dang" >Xây dựng đảng</a>
+                                        </li>
+                                        <li>
+                                            <a title="Đối ngoại" href="/chinh-tri/doi-ngoai" >Đối ngoại</a>
+                                        </li>
+                                        <li>
+                                            <a title="Bàn luận" href="/chinh-tri/ban-luan" >Bàn luận</a>
+                                        </li>
+                                        <li>
+                                            <a title="Kỷ nguyên mới của dân tộc" href="/chinh-tri/ky-nguyen-moi-cua-dan-toc" >Kỷ nguyên mới của dân tộc</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Thời sự" href="/thoi-su" >
+                                Thời sự
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Quốc hội" href="/thoi-su/quoc-hoi-khoa-xv" >Quốc hội</a>
+                                        </li>
+                                        <li>
+                                            <a title="An toàn giao thông" href="/thoi-su/an-toan-giao-thong" >An toàn giao thông</a>
+                                        </li>
+                                        <li>
+                                            <a title="Môi trường" href="/thoi-su/moi-truong" >Môi trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="BHXH-BHYT" href="/thoi-su/bhxh-bhyt" >BHXH-BHYT</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chống tham nhũng" href="/thoi-su/chong-tham-nhung" >Chống tham nhũng</a>
+                                        </li>
+                                        <li>
+                                            <a title="Quốc phòng" href="/thoi-su/quoc-phong" >Quốc phòng</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Kinh doanh" href="/kinh-doanh" >
+                                Kinh doanh
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Net Zero" href="/net-zero" >Net Zero</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tài chính" href="/kinh-doanh/tai-chinh" >Tài chính</a>
+                                        </li>
+                                        <li>
+                                            <a title="Đầu tư" href="/kinh-doanh/dau-tu" >Đầu tư</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thị trường" href="/kinh-doanh/thi-truong" >Thị trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="Doanh nhân" href="/kinh-doanh/doanh-nhan" >Doanh nhân</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tư vấn tài chính" href="/kinh-doanh/tu-van-tai-chinh" >Tư vấn tài chính</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Thể thao" href="/the-thao" >
+                                Thể thao
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Bóng đá Việt Nam" href="/the-thao/bong-da-viet-nam" >Bóng đá Việt Nam</a>
+                                        </li>
+                                        <li>
+                                            <a title="Bóng đá quốc tế" href="/the-thao/bong-da-quoc-te" >Bóng đá quốc tế</a>
+                                        </li>
+                                        <li>
+                                            <a title="Hậu trường" href="/the-thao/hau-truong" >Hậu trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="Các môn khác" href="/the-thao/cac-mon-khac" >Các môn khác</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tường thuật trực tiếp" href="/the-thao/xem-truc-tiep-bong-da" >Tường thuật trực tiếp</a>
+                                        </li>
+                                        <li>
+                                            <a title="Dữ liệu bóng đá" href="/the-thao/du-lieu-bong-da" >Dữ liệu bóng đá</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tin chuyển nhượng" href="/the-thao/tin-chuyen-nhuong" >Tin chuyển nhượng</a>
+                                        </li>
+                                        <li>
+                                            <a title="Video thể thao" href="/the-thao/video-the-thao" >Video thể thao</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Thế giới" href="/the-gioi" >
+                                Thế giới
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Bình luận quốc tế" href="/the-gioi/binh-luan-quoc-te" >Bình luận quốc tế</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chân dung" href="/the-gioi/chan-dung" >Chân dung</a>
+                                        </li>
+                                        <li>
+                                            <a title="Hồ sơ" href="/the-gioi/ho-so" >Hồ sơ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thế giới đó đây" href="/the-gioi/the-gioi-do-day" >Thế giới đó đây</a>
+                                        </li>
+                                        <li>
+                                            <a title="Việt Nam và thế giới" href="/the-gioi/viet-nam-va-the-gioi" >Việt Nam và thế giới</a>
+                                        </li>
+                                        <li>
+                                            <a title="Quân sự" href="/the-gioi/quan-su" >Quân sự</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Giáo dục" href="/giao-duc" >
+                                Giáo dục
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Nhà trường" href="/giao-duc/nha-truong" >Nhà trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chân dung" href="/giao-duc/chan-dung" >Chân dung</a>
+                                        </li>
+                                        <li>
+                                            <a title="Góc phụ huynh" href="/giao-duc/goc-phu-huynh" >Góc phụ huynh</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tuyển sinh " href="/giao-duc/tuyen-sinh" >Tuyển sinh </a>
+                                        </li>
+                                        <li>
+                                            <a title="Du học" href="/giao-duc/du-hoc" >Du học</a>
+                                        </li>
+                                        <li>
+                                            <a title="Học Tiếng Anh" href="/giao-duc/hoc-tieng-anh" >Học Tiếng Anh</a>
+                                        </li>
+                                        <li>
+                                            <a title="Trắc nghiệm" href="/giao-duc/trac-nghiem" >Trắc nghiệm</a>
+                                        </li>
+                                        <li>
+                                            <a title="Khoa học" href="/giao-duc/khoa-hoc" >Khoa học</a>
+                                        </li>
+                                        <li>
+                                            <a title="AI CONTEST 2024" href="/giao-duc/ai-contest-2024" >AI CONTEST 2024</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tin tức việc làm" href="/giao-duc/tuyen-dung/" >Tin tức việc làm</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Giải trí" href="/giai-tri" >
+                                Giải trí
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Thế giới sao" href="/giai-tri/the-gioi-sao" >Thế giới sao</a>
+                                        </li>
+                                        <li>
+                                            <a title="Hoa hậu" href="/giai-tri/hoa-hau" >Hoa hậu</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thời trang" href="/giai-tri/thoi-trang" >Thời trang</a>
+                                        </li>
+                                        <li>
+                                            <a title="Nhạc" href="/giai-tri/nhac" >Nhạc</a>
+                                        </li>
+                                        <li>
+                                            <a title="Phim" href="/giai-tri/phim" >Phim</a>
+                                        </li>
+                                        <li>
+                                            <a title="Truyền hình" href="/giai-tri/truyen-hinh" >Truyền hình</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Văn hóa" href="/van-hoa" >
+                                Văn hóa
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Sách" href="/van-hoa/sach" >Sách</a>
+                                        </li>
+                                        <li>
+                                            <a title="Di sản" href="/van-hoa/di-san" >Di sản</a>
+                                        </li>
+                                        <li>
+                                            <a title="Mỹ thuật - Sân khấu" href="/van-hoa/my-thuat-san-khau" >Mỹ thuật - Sân khấu</a>
+                                        </li>
+                                        <li>
+                                            <a title="UNESCO" href="/van-hoa/unesco" >UNESCO</a>
+                                        </li>
+                                        <li>
+                                            <a title="Điều Còn Mãi" href="/dieu-con-mai" >Điều Còn Mãi</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                        <li class="mainNav__list-item swiper-slide display-mobile">
+                            <a title="Tuần Việt Nam" href="/tuan-viet-nam" >
+                                Tuần Việt Nam
+                            </a>
+                        </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Đời sống" href="/doi-song" >
+                                Đời sống
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Gia đình" href="/doi-song/gia-dinh" >Gia đình</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chuyện lạ" href="/doi-song/chuyen-la" >Chuyện lạ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Ẩm thực" href="/doi-song/am-thuc" >Ẩm thực</a>
+                                        </li>
+                                        <li>
+                                            <a title="Giới trẻ" href="/doi-song/gioi-tre" >Giới trẻ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Mẹo vặt" href="/doi-song/meo-vat" >Mẹo vặt</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tâm sự" href="/doi-song/tam-su" >Tâm sự</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Sức khỏe" href="/suc-khoe" >
+                                Sức khỏe
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Tin tức" href="/suc-khoe/suc-khoe-24h" >Tin tức</a>
+                                        </li>
+                                        <li>
+                                            <a title="Làm đẹp" href="/suc-khoe/lam-dep" >Làm đẹp</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tư vấn sức khỏe" href="/suc-khoe/tu-van-suc-khoe" >Tư vấn sức khỏe</a>
+                                        </li>
+                                        <li>
+                                            <a title="Đàn ông" href="/suc-khoe/dan-ong" >Đàn ông</a>
+                                        </li>
+                                        <li>
+                                            <a title="Các loại bệnh" href="/suc-khoe/benh" >Các loại bệnh</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Thông tin và Truyền thông" href="/thong-tin-truyen-thong" >
+                                Thông tin và Truyền thông
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Toàn văn của Bộ trưởng" href="/thong-tin-truyen-thong/toan-van-cua-bo-truong" >Toàn văn của Bộ trưởng</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chuyển đổi số" href="/thong-tin-truyen-thong/chuyen-doi-so" >Chuyển đổi số</a>
+                                        </li>
+                                        <li>
+                                            <a title="An toàn thông tin" href="/thong-tin-truyen-thong/an-toan-thong-tin" >An toàn thông tin</a>
+                                        </li>
+                                        <li>
+                                            <a title="Hạ tầng số" href="/thong-tin-truyen-thong/ha-tang-so" >Hạ tầng số</a>
+                                        </li>
+                                        <li>
+                                            <a title="Kinh tế số" href="/thong-tin-truyen-thong/kinh-te-so" >Kinh tế số</a>
+                                        </li>
+                                        <li>
+                                            <a title="Báo chí - Xuất bản" href="/thong-tin-truyen-thong/bao-chi-xuat-ban" >Báo chí - Xuất bản</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thị trường" href="/thong-tin-truyen-thong/thi-truong" >Thị trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="Công nghệ" href="/thong-tin-truyen-thong/cong-nghe" >Công nghệ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Xử phạt vi phạm hành chính" href="/thong-tin-truyen-thong/xu-phat-vi-pham-hanh-chinh" >Xử phạt vi phạm hành chính</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Pháp luật" href="/phap-luat" >
+                                Pháp luật
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Hồ sơ vụ án " href="/phap-luat/ho-so-vu-an" >Hồ sơ vụ án </a>
+                                        </li>
+                                        <li>
+                                            <a title="Tư vấn pháp luật" href="/phap-luat/tu-van-phap-luat" >Tư vấn pháp luật</a>
+                                        </li>
+                                        <li>
+                                            <a title="Ký sự pháp đình" href="/phap-luat/ky-su-phap-dinh" >Ký sự pháp đình</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide" >
+                            <a title="Xe" href="/oto-xe-may" >
+                                Xe
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Xe mới " href="/oto-xe-may/xe-moi" >Xe mới </a>
+                                        </li>
+                                        <li>
+                                            <a title="Khám phá" href="/oto-xe-may/kham-pha" >Khám phá</a>
+                                        </li>
+                                        <li>
+                                            <a title="Sau tay lái" href="/oto-xe-may/sau-tay-lai" >Sau tay lái</a>
+                                        </li>
+                                        <li>
+                                            <a title="Diễn đàn" href="/oto-xe-may/dien-dan" >Diễn đàn</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tư vấn" href="/oto-xe-may/tu-van" >Tư vấn</a>
+                                        </li>
+                                        <li>
+                                            <a title="Đánh giá xe " href="/oto-xe-may/danh-gia-xe" >Đánh giá xe </a>
+                                        </li>
+                                        <li>
+                                            <a title="Giá xe" href="/oto-xe-may/gia-xe" >Giá xe</a>
+                                        </li>
+                                        <li>
+                                            <a title="Dữ liệu xe" href="/oto-xe-may/du-lieu-xe" >Dữ liệu xe</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Bất động sản" href="/bat-dong-san" >
+                                Bất động sản
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Dự án" href="/bat-dong-san/du-an" >Dự án</a>
+                                        </li>
+                                        <li>
+                                            <a title="Nội thất" href="/bat-dong-san/noi-that" >Nội thất</a>
+                                        </li>
+                                        <li>
+                                            <a title="Tư vấn" href="/bat-dong-san/kinh-nghiem-tu-van" >Tư vấn</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thị trường" href="/bat-dong-san/thi-truong" >Thị trường</a>
+                                        </li>
+                                        <li>
+                                            <a title="Nhà đẹp" href="/bat-dong-san/nha-dep" >Nhà đẹp</a>
+                                        </li>
+                                        <li>
+                                            <a title="Cơ hội an cư" href="/bat-dong-san/kim-oanh-group" >Cơ hội an cư</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide" >
+                            <a title="Du lịch" href="/du-lich" >
+                                Du lịch
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Chuyện của những dòng sông" href="/du-lich/chuyen-cua-nhung-dong-song-sk0008F1.html" >Chuyện của những dòng sông</a>
+                                        </li>
+                                        <li>
+                                            <a title="Đi đâu chơi đi" href="/du-lich/di-dau-choi-di" >Đi đâu chơi đi</a>
+                                        </li>
+                                        <li>
+                                            <a title="Ăn Ăn Uống Uống" href="/du-lich/an-uong" >Ăn Ăn Uống Uống</a>
+                                        </li>
+                                        <li>
+                                            <a title="Ngủ Ngủ Nghỉ Nghỉ" href="/du-lich/ngu-nghi" >Ngủ Ngủ Nghỉ Nghỉ</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+                    <li class="mainNav__list-item swiper-slide">
+                            <a title="Bạn đọc" href="/ban-doc" >
+                                Bạn đọc
+                            </a>
+    
+                            <ul class="sub__menu">
+                                        <li>
+                                            <a title="Hồi âm" href="/ban-doc/hoi-am" >Hồi âm</a>
+                                        </li>
+                                        <li>
+                                            <a title="Chia sẻ" href="/ban-doc/chia-se" >Chia sẻ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Thơ" href="/ban-doc/tho" >Thơ</a>
+                                        </li>
+                                        <li>
+                                            <a title="Ngày mai tươi sáng" href="/ban-doc/ngay-mai-tuoi-sang" >Ngày mai tươi sáng</a>
+                                        </li>
+                                
+                            </ul>
+                    </li>
+            <li class="mainNav__list-item no-action">
+                <a class="btn-hamburger" href="" title="Hamburger">
+                    <span class="icon-hamburger"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <!-- Cột trái -->
+            <div class="column column-left">
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/Đài PTTH.jpg" alt="News 1"></a>
+                    <a href="#" target="_blank"><h3>Đài PTTH Hà Nội cần định hướng theo phương châm 'ngắn - nhanh - rộng'</h3></a>
+                </div>
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/Tong bi thu.jpg" alt="News 2"></a>
+                    <a href="#" target="_blank"><h3>Tổng Bí thư, Chủ tịch nước Tô Lâm dự Đại hội Mặt trận Tổ quốc Việt Nam</h3></a>
+                </div>
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/Bay rang rong.jpg" alt="News 3"></a>
+                    <a href="#" target="_blank"><h3>Bẫy ‘răng rồng’ bí ẩn cản đường lui của quân đội Nga ở Kursk</h3></a>
+                </div>
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/3 dien vien.jpg" alt="News 4"></a>
+                    <a href="#" target="_blank"><h3>3 diễn viên và MC nổi tiếng bị bắt giữ</h3></a>
+                </div>
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/theche.jpg" alt="News 5"></a>
+                    <a href="#" target="_blank"><h3>Cải cách thể chế nhìn từ cuốn sách “Vì sao các quốc gia thất bại”</h3></a>
+                </div>
+                <div class="small-news1">
+                    <a href="#" target="_blank"><img src="./image/Nhieuphuhuynh.jpg" alt="News 6"></a>
+                    <a href="#" target="_blank"><h3>Nhiều phụ huynh 'đốt tiền' cho con học IELTS vì hiểu lầm điểm cao là một tài năng</h3></a>
+                </div>
+            </div>
+            <div class="column main-news">
+                <div class="featured-news">
+                    <a href="#" target="_blank"></a><img src="./image/TBT Tô Lâm.jpg" alt="Featured News 1">
+                    <a href="#" target="_blank"></a><h2>Tổng Bí thư, Chủ tịch nước Tô Lâm: Chỉ có đoàn kết mới có thắng lợi</h2>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"></a><p>Hơn 3 giờ căng thẳng dập tắt vụ cháy lớn ở quận trung tâm Hà Nội</p>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a><p>Đề nghị chưa bổ nhiệm lại 11 thẩm phán để kiểm điểm xử lý trách nhiệm</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-news">
+                    <div class="small-news">
+                        <a href="#" target="_blank"></a><img src="./image/dauco.png" alt="News 2">
+                        <a href="#" target="_blank"></a><h3>Đầu cơ đẩy giá nhà cao phi thực tế, 2 bộ đồng tình đề xuất đánh thuế BĐS</h3>
+                    </div>
+                    <div class="small-news">
+                        <a href="#" target="_blank"></a><img src="./image/TML.jpg" alt="News 3">
+                        <a href="#" target="_blank"></a><h3>Vụ Vạn Thịnh Phát: Tòa nhận được gần 6.000 đơn yêu cầu bồi thường của bị hại</h3>
+                    </div>
+                </div>
+            </div>
+   <!-- Cột phải -->
+   <div class="column column-right">
+    <div class="small-news2">
+        <a href="#" target="_blank">
+            <img src="./image/VN caitien.jpg" alt="Việt Nam cải thiện về chỉ số Tự do kinh tế thế giới">
+            <h3>Việt Nam cải thiện về chỉ số Tự do kinh tế thế giới</h3>
+        </a>
+    </div>
+    <div class="small-news2">
+        <a href="#" target="_blank">
+            <img src="./image/SuMenh.jpg" alt="Sứ mệnh dẫn dắt trong 'kỷ nguyên vươn mình'">
+            <h3>Sứ mệnh dẫn dắt trong 'kỷ nguyên vươn mình'</h3>
+        </a>
+    </div>
+    <div class="small-news2">
+        <a href="#" target="_blank">
+            <img src="./image/CUHUYCH.jpg" alt="Cú huých đặc biệt về nhân tài giúp Việt Nam tiến vào kỷ nguyên mới">
+            <h3>Cú huých đặc biệt về nhân tài giúp Việt Nam tiến vào kỷ nguyên mới</h3>
+        </a>
+    </div>
+</div>
+
+
+        </div>
+        <div class="bottom-news">
+            <div class="small-news-bottom">
+                <div class="news-box">
+                <a href="#" target="_blank"><img src="./image/cau.jpeg" alt="Bottom News 1"></a>
+                <a href="#" target="_blank"><h3>Giá cau vọt lên đỉnh rồi lao dốc: ‘Công thức’ lặp nhiều lần, nông dân 'hay quên'</h3></a>
+            </div>
+            </div>
+            <div class="small-news-bottom">
+                <div class="news-box">
+                <a href="#" target="_blank"><img src="./image/dilich.jpg" alt="Bottom News 2"></a>
+                <a href="#" target="_blank"><h3>Chuyến du lịch 'chữa lành' thành 'hành xác' vì sở thích của bạn thân</h3></a>
+            </div>
+            </div>
+            <div class="small-news-bottom">
+                <div class="news-box">
+                <a href="#" target="_blank"><img src="./image/viet-nam-can-thanh-lap-ngay-vien-dich-thuat-van-hoc-26864.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><h3>Việt Nam cần thành lập ngay Viện Dịch thuật văn học</h3></a>
+            </div>
+    
+            </div>
+            <div class="small-news-bottom">
+                <div class="news-box">
+                <a href="#" target="_blank"><img src="./image/tap-trung-thao-go-kho-khan-vuong-mac-cho-cac-du-an-dien-nang-luong-tai-tao-20589.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><h3>Tập trung tháo gỡ khó khăn, vướng mắc cho các dự án điện năng lượng tái tạo</h3></a>
+            </div>
+         </div>
+            <div class="small-news-bottom">
+                <div class="news-box">
+                <a href="#" target="_blank"><img src="./image/thi-truong-2-2841.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><h3>Thị trường 2.200 tỷ USD, game Việt khai thác được bao nhiêu</h3></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
