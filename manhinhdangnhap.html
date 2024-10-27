@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí tài khoản</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+<body>
+    
+    
+    <section id="main-body" class="login-page register-page vnnid-login vnnid-loginv2">
+        <div class="container">
+            <div class="login-page-main">
+                <div class="login-page-inner">
+                    <div class="login-page-left">
+                        <form method="post" class="form" novalidate="novalidate" id="register-form" action="/vi/Account/Register?returnUrl=https%3A%2F%2Fvietnamnet.vn%2F">
+                            <input type="hidden" data-val="true" data-val-required="The ReturnUrl field is required." id="ReturnUrl" name="ReturnUrl" value="https://vietnamnet.vn/">
+                            <div class="mainlogin mainlogin-main">
+                                <h1>Đăng ký tài khoản</h1>
+                                <div>
+                                    
+                                </div>
+                                <div class="demo">
+                                    <p style="font-size: 13px !important;">Bằng các tài khoản mạng xã hội </p>
+                                </div>
+                                <div class="graction mgt10 text-center graction-social graction-socialv2">
+                                    <span class="vnn-act-logingg" id="googlelogin" data-url="/google-login?isPopup=true&amp;returnUrl=https://vietnamnet.vn/"></span>
+                                    <span class="vnn-act-loginap" id="applelogin" data-url="/apple-login?isPopup=true&amp;returnUrl=https://vietnamnet.vn/"></span>
+                                </div>
+                                <script src="./nhapgg.js"></script>
+                                <div class="demo">
+                                    <p style="font-size: 13px !important;">Hoặc</p>
+                                </div>
+                                <div class="gremail rg-email mgt10">
+                                    <input type="text" placeholder="Nhập Email hoặc số điện thoại" autocomplete="off"data-val-length="Email hoặc Số điện thoại lớn hơn 3 ký tự và nhỏ hơn 50 ký tự" data-val-length-max="50" data-val-length-min="3" data-val-required="The EmailOrMobile field is required." id="EmailOrMobile" name="EmailOrMobile" value="">
+                                    <i class="gremail-icon"></i>
+                                </div>
+
+                                <div class="grpass rg-pass mgt10">
+                                    <input type="password" placeholder="Nhập mật khẩu" autocomplete="off" data-val="true" data-val-length="Mật khẩu phải lớn hơn 8 ký tự và nhỏ hơn 50 ký tự" data-val-length-max="50" data-val-length-min="8" data-val-required="The Password field is required." id="Password" name="Password">
+                                    <i class="far fa-eye" id="togglePassword"></i>
+                                </div>
+                               
+                                <div class="grpass rg-repass mgt10">
+                                    <input type="password" placeholder="Xác nhận mật khẩu" autocomplete="off"data-val-equalto="Mật khẩu phải phải trùng với mật khẩu mới." data-val-equalto-other="*.Password" data-val-required="The ConfirmPassword field is required." id="ConfirmPassword" name="ConfirmPassword">
+                                    <i class="far fa-eye" id="toggleRePassword"></i>
+                                </div>
+                                <div class="rg-graction mgt20">
+                                    <div class="rg-graction-main">
+                                        <div class="rg-register">
+                                            <button id="btn-register" type="submit" class="rg-rgclick resize-bt-register">Đăng ký</button>
+                                            <a class="rg-rgcancel resize-bt-register" href="/">Hủy</a>
+                                        </div>
+                                        <p class="rg-register-pv2">
+                                            Khi bấm đăng ký bạn đã đồng ý với <a href="javascript:void(-1);" id="open-serviceterm">Điều khoản dịch vụ </a>
+                                            và <a href="javascript:void(-1);" id="open-policy">Chính sách quyền riêng tư</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="GoogleRecaptchaSiteKey" value="6LdVB8obAAAAALg42ksysRzMY_oo6SwVF2eNvRoM">
+                            <input type="hidden" id="GoogleRecaptchaValue" data-val="true" data-val-required="The GoogleRecaptchaValue field is required." name="GoogleRecaptchaValue" value="">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8EtsmCSGoANLqrjAbgkGEmRdQavmBlib7fr1vsMGQVnkRQ2Ltaab2zeYK7bSN6Ns63hOZRfTg_t7_QrQYmqsNMz4NLxgi6rcR1joTRchWzyPp9T5o4erqEqVWeumKE9kRLxs8RxV0rRdPSTf_gHBcXW_2wp21RybeoudGlTP2cNpC8ZDmyfIVGm1sPhNk-F9fA"></form>
+                    </div>
+                    <div class="login-page-right">
+                        <span>
+                            VietNamNet - Báo điện tử chính thống
+                            hàng đầu Việt Nam
+                            <br>
+                            <i>&nbsp;</i>
+                        </span>
+                    </div>
+                  
+
+                </body>
