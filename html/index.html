@@ -5,7 +5,7 @@
         <meta name="language" content="vietnamese">
             <title>Báo VietNamNet - Tin tức mới nhất, tin nhanh Việt Nam và thế giới</title>
             
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <!-- Đường dẫn chỉ tới file style.css -->
         <header class="header vnn-header">
         <div class="container">
@@ -27,28 +27,8 @@
                             Xem lịch vạn niên
                         </a>
                     </div>
-                <script>
-                    // Hàm để cập nhật thời gian
-                    function updateClock() {
-                        const clockElement = document.getElementById('clock');
-                        
-                        // Tạo một đối tượng Date mới
-                        const now = new Date();
-                        
-                        // Định dạng ngày tháng
-                        const options = { weekday: 'long', year: 'numeric', month: 'numeric', day: 'numeric' };
-                        const formattedDate = now.toLocaleDateString('vi-VN', options);
-            
-                        // Cập nhật nội dung của phần tử
-                        clockElement.textContent = formattedDate;
-                    }
-            
-                    // Cập nhật thời gian ngay khi tải trang
-                    updateClock();
-            
-                    // Cập nhật thời gian mỗi phút
-                    setInterval(updateClock, 60000);
-                </script>
+                    <script src="/js/clock.js"></script>
+                   
             
             </div>
             <div class="container__right">
@@ -562,33 +542,33 @@
             <!-- Cột trái -->
             <div class="column column-left">
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/Đài PTTH.jpg" alt="News 1"></a>
+                    <a href="#" target="_blank"><img src="/image/Đài PTTH.jpg" alt="News 1"></a>
                     <a href="#" target="_blank"><h3>Đài PTTH Hà Nội cần định hướng theo phương châm 'ngắn - nhanh - rộng'</h3></a>
                 </div>
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/Tong bi thu.jpg" alt="News 2"></a>
+                    <a href="#" target="_blank"><img src="/image/Tong bi thu.jpg" alt="News 2"></a>
                     <a href="#" target="_blank"><h3>Tổng Bí thư, Chủ tịch nước Tô Lâm dự Đại hội Mặt trận Tổ quốc Việt Nam</h3></a>
                 </div>
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/Bay rang rong.jpg" alt="News 3"></a>
+                    <a href="#" target="_blank"><img src="/image/Bay rang rong.jpg" alt="News 3"></a>
                     <a href="#" target="_blank"><h3>Bẫy ‘răng rồng’ bí ẩn cản đường lui của quân đội Nga ở Kursk</h3></a>
                 </div>
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/3 dien vien.jpg" alt="News 4"></a>
+                    <a href="#" target="_blank"><img src="/image/3 dien vien.jpg" alt="News 4"></a>
                     <a href="#" target="_blank"><h3>3 diễn viên và MC nổi tiếng bị bắt giữ</h3></a>
                 </div>
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/theche.jpg" alt="News 5"></a>
+                    <a href="#" target="_blank"><img src="/image/theche.jpg" alt="News 5"></a>
                     <a href="#" target="_blank"><h3>Cải cách thể chế nhìn từ cuốn sách “Vì sao các quốc gia thất bại”</h3></a>
                 </div>
                 <div class="small-news1">
-                    <a href="#" target="_blank"><img src="./image/Nhieuphuhuynh.jpg" alt="News 6"></a>
+                    <a href="#" target="_blank"><img src="/image/Nhieuphuhuynh.jpg" alt="News 6"></a>
                     <a href="#" target="_blank"><h3>Nhiều phụ huynh 'đốt tiền' cho con học IELTS vì hiểu lầm điểm cao là một tài năng</h3></a>
                 </div>
             </div>
             <div class="column main-news">
                 <div class="featured-news">
-                    <a href="#" target="_blank"></a><img src="./image/TBT Tô Lâm.jpg" alt="Featured News 1">
+                    <a href="#" target="_blank"></a><img src="/image/TBT Tô Lâm.jpg" alt="Featured News 1">
                     <a href="#" target="_blank"></a><h2>Tổng Bí thư, Chủ tịch nước Tô Lâm: Chỉ có đoàn kết mới có thắng lợi</h2>
                     <ul>
                         <li>
@@ -601,11 +581,11 @@
                 </div>
                 <div class="sub-news">
                     <div class="small-news">
-                        <a href="#" target="_blank"></a><img src="./image/dauco.png" alt="News 2">
+                        <a href="#" target="_blank"></a><img src="/image/dauco.png" alt="News 2">
                         <a href="#" target="_blank"></a><h3>Đầu cơ đẩy giá nhà cao phi thực tế, 2 bộ đồng tình đề xuất đánh thuế BĐS</h3>
                     </div>
                     <div class="small-news">
-                        <a href="#" target="_blank"></a><img src="./image/TML.jpg" alt="News 3">
+                        <a href="#" target="_blank"></a><img src="/image/TML.jpg" alt="News 3">
                         <a href="#" target="_blank"></a><h3>Vụ Vạn Thịnh Phát: Tòa nhận được gần 6.000 đơn yêu cầu bồi thường của bị hại</h3>
                     </div>
                 </div>
@@ -614,19 +594,19 @@
    <div class="column column-right">
     <div class="small-news2">
         <a href="#" target="_blank">
-            <img src="./image/VN caitien.jpg" alt="Việt Nam cải thiện về chỉ số Tự do kinh tế thế giới">
+            <img src="/image/VN caitien.jpg" alt="Việt Nam cải thiện về chỉ số Tự do kinh tế thế giới">
             <h3>Việt Nam cải thiện về chỉ số Tự do kinh tế thế giới</h3>
         </a>
     </div>
     <div class="small-news2">
         <a href="#" target="_blank">
-            <img src="./image/SuMenh.jpg" alt="Sứ mệnh dẫn dắt trong 'kỷ nguyên vươn mình'">
+            <img src="/image/SuMenh.jpg" alt="Sứ mệnh dẫn dắt trong 'kỷ nguyên vươn mình'">
             <h3>Sứ mệnh dẫn dắt trong 'kỷ nguyên vươn mình'</h3>
         </a>
     </div>
     <div class="small-news2">
         <a href="#" target="_blank">
-            <img src="./image/CUHUYCH.jpg" alt="Cú huých đặc biệt về nhân tài giúp Việt Nam tiến vào kỷ nguyên mới">
+            <img src="/image/CUHUYCH.jpg" alt="Cú huých đặc biệt về nhân tài giúp Việt Nam tiến vào kỷ nguyên mới">
             <h3>Cú huých đặc biệt về nhân tài giúp Việt Nam tiến vào kỷ nguyên mới</h3>
         </a>
     </div>
@@ -637,32 +617,32 @@
         <div class="bottom-news">
             <div class="small-news-bottom">
                 <div class="news-box">
-                <a href="#" target="_blank"><img src="./image/cau.jpeg" alt="Bottom News 1"></a>
+                <a href="#" target="_blank"><img src="/image/cau.jpeg" alt="Bottom News 1"></a>
                 <a href="#" target="_blank"><h3>Giá cau vọt lên đỉnh rồi lao dốc: ‘Công thức’ lặp nhiều lần, nông dân 'hay quên'</h3></a>
             </div>
             </div>
             <div class="small-news-bottom">
                 <div class="news-box">
-                <a href="#" target="_blank"><img src="./image/dilich.jpg" alt="Bottom News 2"></a>
+                <a href="#" target="_blank"><img src="/image/dilich.jpg" alt="Bottom News 2"></a>
                 <a href="#" target="_blank"><h3>Chuyến du lịch 'chữa lành' thành 'hành xác' vì sở thích của bạn thân</h3></a>
             </div>
             </div>
             <div class="small-news-bottom">
                 <div class="news-box">
-                <a href="#" target="_blank"><img src="./image/viet-nam-can-thanh-lap-ngay-vien-dich-thuat-van-hoc-26864.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><img src="/image/viet-nam-can-thanh-lap-ngay-vien-dich-thuat-van-hoc-26864.jpg" alt="Bottom News 3"></a>
                 <a href="#" target="_blank"><h3>Việt Nam cần thành lập ngay Viện Dịch thuật văn học</h3></a>
             </div>
     
             </div>
             <div class="small-news-bottom">
                 <div class="news-box">
-                <a href="#" target="_blank"><img src="./image/tap-trung-thao-go-kho-khan-vuong-mac-cho-cac-du-an-dien-nang-luong-tai-tao-20589.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><img src="/image/tap-trung-thao-go-kho-khan-vuong-mac-cho-cac-du-an-dien-nang-luong-tai-tao-20589.jpg" alt="Bottom News 3"></a>
                 <a href="#" target="_blank"><h3>Tập trung tháo gỡ khó khăn, vướng mắc cho các dự án điện năng lượng tái tạo</h3></a>
             </div>
          </div>
             <div class="small-news-bottom">
                 <div class="news-box">
-                <a href="#" target="_blank"><img src="./image/thi-truong-2-2841.jpg" alt="Bottom News 3"></a>
+                <a href="#" target="_blank"><img src="/image/thi-truong-2-2841.jpg" alt="Bottom News 3"></a>
                 <a href="#" target="_blank"><h3>Thị trường 2.200 tỷ USD, game Việt khai thác được bao nhiêu</h3></a>
             </div>
             </div>
