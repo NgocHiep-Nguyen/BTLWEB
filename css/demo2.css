@@ -39,7 +39,7 @@
 }
 
 .login-page-right {
-    background: url(./image/VnnId_anh.jpg) no-repeat scroll 0 -3px transparent;
+    background: url(/image/VnnId_anh.jpg) no-repeat scroll 0 -3px transparent;
     width: calc(100% - 383px);
     float: right;
 }

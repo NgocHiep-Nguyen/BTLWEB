@@ -167,6 +167,16 @@ body {
     opacity: 1
 }
 
+.wrapNav .mainHamburger .main-menu .hamburger__left .header_submenu-main .header_submenu-button .header_submenu-download a {
+    border: 1px solid #2d67ad;
+    border-radius: 5px;
+    color: #2d67ad;
+    font-family: merriweather-bold;
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center
+}
+
 .wrapNav .mainHamburger .main-menu .hamburger__left .header_submenu-main .header_submenu-button ul li {
     line-height: 22px
 }
