@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled News List</title>
+    <style>
+        /* Container styling */
+        .news-list {
+            width: 300px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Styling each news item */
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        /* Image styling */
+        .news-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        /* Text styling */
+        .news-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Remove border on the last item */
+        .news-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="news-list">
+        <li class="news-item">
+            <img src="image1.jpg" alt="News 1">
+            <p class="news-text">Bị nhân viên điện lực 'dỏm' lừa 650 triệu đồng và lời cảnh báo từ công an</p>
+        </li>
+        <li class="news-item">
+            <img src="image2.jpg" alt="News 2">
+            <p class="news-text">Doãn Hải My ngày càng đẹp khi hôn nhân hạnh phúc bên Đoàn Văn Hậu</p>
+        </li>
+        <li class="news-item">
+            <img src="image3.jpg" alt="News 3">
+            <p class="news-text">Israel tiếp tục không kích đợt hai, Iran xác nhận căn cứ quân sự bị tập kích</p>
+        </li>
+        <li class="news-item">
+            <img src="image4.jpg" alt="News 4">
+            <p class="news-text">Một hoa hậu bị phế truất ngay sau chung kết Miss Grand International 2024</p>
+        </li>
+    </ul>
+
+</body>
+</html>
