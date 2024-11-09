@@ -10,8 +10,15 @@ body {
 }
 
 .breadcrumb {
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
+}
+.breadcrumb__main {
+    display: flex; /* Sắp xếp các mục theo hàng ngang */
+}
+
+.breadcrumb__main ul .menu.active a {
+    color: red!important;
 }
 
 .breadcrumb__heading {
@@ -391,4 +398,128 @@ body {
 .horizontalVideo__main a {
     color: #333;
     text-decoration: none;
+}
+.boxGoldPrice{
+    width: 90%;
+    margin: 10px;
+    margin-left: 65px;
+    gap: 20px;
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content: center;
+    text-align: center;
+}
+.boxGoldPrice a{
+    padding: 10px;
+}
+.swiper-slide {
+    width: 25%;
+    display: flex;
+}
+
+.gold__title{
+    display: flex;
+    margin-right: -40px;
+    border-right: 1px solid #ccc;
+    background-color: #ccc;
+    text-decoration: none;
+}
+.icon-gold {
+    background-image: url(https://static.vnncdn.net/v1/icon/icon-gold.svg);
+    background-position: 50%;
+    height: 16px;
+    width: 21px;
+}
+.gold__title p{
+    font-weight: bold;
+    color: goldenrod;
+}
+.gold__title span{
+    color: grey;
+    text-decoration: none;
+    font-size: small;
+}
+.gold__content{
+    padding: 10px;
+    position: relative;
+    gap: 5px;
+}
+.gold__content::after {
+    content: "";
+    position: absolute;
+    top: 10px; /* cách trên 10px */
+    right: 0;
+    width: 1px; /* độ rộng của border */
+    height: 50%; /* chiều dài border (tùy chỉnh theo ý muốn) */
+    background-color: #ccc; /* màu của border */
+}
+.gold__content-price{
+    color: grey;
+}
+.gold__content-price span{
+    color: red;
+}
+.gold__seemore {
+    text-align: center;
+}
+.gold__seemore a .icon-chart-gold {
+    background-image: url(https://static.vnncdn.net/v1/icon/icon-chart-gold.svg);
+    background-position: 50%;
+    display: inline-block;
+    height: 14px;
+    margin-right: 10px;
+    width: 14px;
+}
+.gold__seemore a{
+    color: #333;
+    text-decoration: none;
+}
+.petroleum {
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.brove{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.beneath{
+    display: flex;
+    gap: 20px;
+}
+.petroleum__title{
+    font-weight: bold;
+    color: #007BFF;
+    width: 30%;
+    font-size: 20px;
+}
+.petroleum__tag {
+    color: #333;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.yellow{
+    background-color: rgb(251, 251, 191);
+}
+.aqua{
+    background-color: rgb(207, 248, 248);
+}
+.violet{
+    background-color:rgb(245, 229, 245);
+}
+.line-aqua{
+    background-color: rgb(201, 245, 231);
+}
+.petroleum__title .icon-search {
+    background-image: url(https://static.vnncdn.net/v1/icon/icon-search-blue.svg);
+    background-position: 50%;
+    display: inline-block;
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
 }
